@@ -10,6 +10,32 @@
 @import url('jquery-ui.css');
 @import url('jquery.bootstrap-touchspin.css');
 
+
+
+
+
+.tour-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tour-list li {
+    margin-bottom: 10px;
+}
+
+.tour-list a {
+    text-decoration: none;
+    color: #007bff; /* Brand color */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.tour-list a:hover {
+    color: #0056b3; /* Darker hover color */
+    text-decoration: underline;
+}
+
 /*
 ============================================
 	Reset
@@ -22,6 +48,66 @@
 	border: none;
 	outline: none;
 }
+
+
+/* Container Styling */
+.features-section {
+	padding: 60px 0;
+  }
+  
+  .sec-title {
+	margin-bottom: 40px;
+  }
+  
+  .sec-title h1 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #007bff; /* Brand color */
+  }
+  
+  /* Card Layout Styling */
+  .feature-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+  }
+  
+  .feature-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+	height: 200px; /* Fixed image height */
+	object-fit: cover;
+  }
+  
+  .card-body {
+padding: 20px;
+text-align: center;
+}
+
+.card-title {
+font-size: 18px;
+font-weight: bold;
+color: #333; /* Darker title color */
+margin-bottom: 10px;
+}
+
+.card-text {
+font-size: 14px;
+color: #555; /* Muted text color */
+line-height: 1.6;
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+.feature-card {
+  margin-bottom: 20px;
+}
+}
+
 /*
 ============================================
 	Global Settings
