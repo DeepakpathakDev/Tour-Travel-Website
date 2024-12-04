@@ -237,6 +237,8 @@ document.addEventListener('click', (event) => {
   }
 });
 
+
+
 	
 
 })(window.jQuery);
