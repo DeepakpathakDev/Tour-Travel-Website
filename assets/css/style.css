@@ -2291,7 +2291,7 @@ img {
 	position: relative;
 	display: inline-block;
 	margin-top: 10px;
-	max-height:45px;
+	max-height:65px;
 }
 
 .main-menu {
@@ -2368,7 +2368,7 @@ img {
 }
 .sticky-header .img-responsive img {
 	margin-top: 19px;
-	max-height: 45px;
+	max-height: 65px;
 }
 .sticky-header .right-col .menu-right-content .link-btn .theme-btn {
     box-shadow: none;
@@ -4470,13 +4470,18 @@ transform: rotate(180deg);
 	position: fixed;
 	color: #fff;
 	height: 50px;
-	left: 10px;
 	min-width: 50px;
 	text-align: center;
 	z-index: 9999;
 	border-radius: 50%;
 	line-height: 50px;
 	font-size: 34px;
+	position: fixed;
+	right: 30px; /* Distance from the right edge */
+	bottom: 110px; /* Distance from the bottom edge */
+	z-index: 1000; /* Ensure it appears above other elements */
+	transition: transform 0.3s ease; /* Smooth hover effect */
+  
 }
 .whatsappbtn:before {
 	content: "";
