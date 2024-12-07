@@ -112,62 +112,66 @@ line-height: 1.6;
 ============================================
 	Global Settings
 ============================================
-*/
-/* Animation Styles */
+/* Updated Animation Styles */
 .animated-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  transform: scale(1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 0.5s ease forwards;
-  opacity: 0; /* Initially hidden for animation */
-}
-
-.animated-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.animated-card img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.animated-card:hover img {
-  transform: scale(1.1); /* Image zoom on hover */
-}
-
-.animated-card .top-vist-tour-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background: rgba(252, 245, 245, 0.5);
-  color: #fff;
-  text-align: center;
-  transition: transform 0.3s ease;
-  transform: translateY(100%);
-}
-
-.animated-card:hover .top-vist-tour-content {
-  transform: translateY(0); /* Slide-up effect on hover */
-}
-
-/* Fade-in animation for cards */
-@keyframes fadeInUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	transform: scale(1);
+	width: 300px; /* Increased width */
+	height: 200px; /* Increased height */
+	margin: 20px auto; /* Center align and spacing */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	animation: fadeInUp 0.5s ease forwards;
+	opacity: 0; /* Initially hidden for animation */
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  
+  .animated-card:hover {
+	transform: scale(1.1); /* Increase hover scaling for larger cards */
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
   }
-}
-
+  
+  .animated-card img {
+	width: 100%;
+	height: 100%; /* Ensure the image fills the new dimensions */
+	object-fit: cover; /* Maintain aspect ratio while covering */
+	transition: transform 0.3s ease;
+  }
+  
+  .animated-card:hover img {
+	transform: scale(1.15); /* Increase zoom effect on hover */
+  }
+  
+  .animated-card .top-vist-tour-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px; /* Adjusted padding */
+	background: rgba(0, 0, 0, 0.6); /* Slightly darker background */
+	color: #fff;
+	text-align: center;
+	transition: transform 0.3s ease;
+	transform: translateY(100%);
+	font-size: 1.2em; /* Adjust text size for larger cards */
+  }
+  
+  .animated-card:hover .top-vist-tour-content {
+	transform: translateY(0); /* Slide-up effect remains unchanged */
+  }
+  
+  /* Fade-in animation for cards */
+  @keyframes fadeInUp {
+	from {
+	  transform: translateY(20px);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
 /* Tooltip Button */
 #itinerary-button {
 	position: fixed;
@@ -311,7 +315,7 @@ h6 {
 	background: none;
 	line-height: 1.6em;
 	font-family: 'Muli', sans-serif;
-	color: #333333;
+
 }
 
 input,
