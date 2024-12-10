@@ -175,6 +175,7 @@ line-height: 1.6;
 /* Tooltip Button */
 #itinerary-button {
 	position: fixed;
+	transition: left 0.3s ease-in-out;
 	left: 10px; /* Move button to the left */
 	top: 50%;
 	transform: translateY(-50%);
@@ -2290,7 +2291,6 @@ img {
 .main-header .logo-outer .logo img {
 	position: relative;
 	display: inline-block;
-	margin-top: 10px;
 	max-height:65px;
 }
 
