@@ -2283,16 +2283,6 @@ img {
 	background-color: #fbfbfb;
 }
 
-.main-header .header-upper .logo img {
-	position: relative;
-	display: inline-block;
-	max-width: 100%;
-}
-.main-header .logo-outer .logo img {
-	position: relative;
-	display: inline-block;
-	max-height:65px;
-}
 
 .main-menu {
     position: relative;
@@ -2924,7 +2914,7 @@ img {
     display: inline-block;
     margin: 0;
     max-width: 100%;
-    max-height:50px;
+    max-height:40px;
     z-index: 999;
 }
 .main-header .logo-outer {
