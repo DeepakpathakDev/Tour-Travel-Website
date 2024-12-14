@@ -12,6 +12,14 @@
 
 
 
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: url('/assets/images/TourismMainPage.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
 
 
 .tour-list {
@@ -2280,7 +2288,7 @@ img {
 	-webkit-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
-	background-color: #fbfbfb;
+
 }
 
 
@@ -2342,6 +2350,7 @@ img {
     cursor: pointer;
     font-weight: 900;
 }
+
 .main-menu .navigation>li.dropdown:hover:after,
 .main-menu .navigation>li.current.dropdown:after {
 	color: #282a77;
@@ -2738,6 +2747,14 @@ img {
 /*Sticky Header*/
 
 .sticky-header {
+	position: relative;
+    width: 100%;
+    height: 90px;
+    background: url('/assets/images/TourismMainPage.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+
+
 	position: fixed;
 	opacity: 0;
 	visibility: hidden;
@@ -2745,7 +2762,6 @@ img {
 	top: 0px;
 	width: 100%;
 	padding: 0px 0px;
-	background: #ffffff;
 	z-index: 0;
 	border-bottom: 1px solid #e0e0e0;
 	transition: all 500ms ease;
@@ -2913,7 +2929,7 @@ img {
     position: relative;
     display: inline-block;
     margin: 0;
-    max-width: 50%;
+    max-width: 40%;
     max-height:40px;
     z-index: 999;
 }
@@ -3552,7 +3568,7 @@ img {
 .testimonial-section{
   position:relative;
   overflow:hidden;
-  padding:0px 0px 0px;
+  padding:110px 0px 0px;
 }
 .testimonial-section .owl-dots{
   display:none;
